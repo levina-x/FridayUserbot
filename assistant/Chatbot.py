@@ -73,7 +73,7 @@ async def reply_handler(client, message):
         await message.copy(msg_["sender_id"], reply_to_message_id=msg_["um_id"])
     except BaseException as e:
         await message.reply_text(
-            f"Unable To Reply Message To This User \nTraceBack : {e}"
+            f"Tidak Dapat Membalas Pesan Ke Pengguna Ini \nTraceBack : {e}"
         )
 
 
